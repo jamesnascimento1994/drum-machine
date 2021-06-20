@@ -2,26 +2,26 @@ const audioClips = [
 	{
 		keyCode: 81,
 		keyTrigger: 'Q',
-		id: 'Heater-1',
-		url: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3',
+		id: 'Punchy-Kick',
+		url: 'https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3',
 	},
 	{
 		keyCode: 87,
 		keyTrigger: 'W',
-		id: 'Heater-2',
-		url: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3',
+		id: 'Side-Stick',
+		url: 'https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3',
 	},
 	{
 		keyCode: 69,
 		keyTrigger: 'E',
-		id: 'Heater-3',
-		url: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3',
+		id: 'Snare',
+		url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3',
 	},
 	{
 		keyCode: 65,
 		keyTrigger: 'A',
-		id: 'Heater-4',
-		url: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3',
+		id: 'Shaker',
+		url: 'https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3',
 	},
 	{
 		keyCode: 83,
@@ -76,7 +76,7 @@ function App() {
         )
 	};
 	return (
-		<div id="drum-machine" className='bg-gradient-dark min-vh-100 text-muted'>
+		<div id="drum-machine" className='bg-dark min-vh-100 text-muted'>
 			<div id="display" className='text-center'>
 				<h2>Drum Machine</h2>
 				{audioClips.map((clip) => (
@@ -154,7 +154,7 @@ function Pad({ clip, volume, setRecording }) {
 	return (
 		<div id={clip.id}
 			onClick={playSound}
-			className={`drum-pad btn btn-secondary p-4 m-3 ${active && 'btn-warning'}`}>
+			className={`drum-pad btn btn-primary p-4 m-3 ${active && 'btn-warning'}`}>
 			<audio src={clip.url} id={clip.keyTrigger} className='clip' />
 			{clip.keyTrigger}
 		</div>

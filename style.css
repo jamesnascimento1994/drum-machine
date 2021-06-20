@@ -1,4 +1,14 @@
-body {
-  background: true;
+h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 48px;
+}
+
+h4 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 36px;
+}
+
+.drum-pad {
+  border-radius: 30%;
 }
 /*# sourceMappingURL=style.css.map */

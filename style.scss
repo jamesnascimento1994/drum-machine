@@ -1,5 +1,17 @@
-$enable-gradients: true;
+$font-family: 'Amatic SC', sans-serif;
 
-body {
-    background: $enable-gradients;
+h2 {
+    font-family: $font-family;
+    font-size: 48px;
+}
+
+h4 {
+    font-family: $font-family;
+    font-size: 36px;
+}
+
+
+
+.drum-pad {
+    border-radius: 30%;
 }
