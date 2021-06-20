@@ -17,3 +17,7 @@ Programming Languages: HTML, SASS/SCSS, and JavaScript
 Frameworks/Libraries: React and Bootstrap
 
 React was compiled with Babel
+
+App deployed with Netlify
+
+https://jnas-drum-machine.netlify.app/
